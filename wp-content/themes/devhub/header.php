@@ -60,12 +60,12 @@
                 </a>
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden items-center gap-1 lg:flex">
+                <nav class="hidden items-center gap-1 lg:flex main-menu">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'primary',
                         'container'      => false,
-                        'menu_class'     => 'flex items-center gap-1',
+                        //'menu_class'     => 'flex items-center gap-1',
                         'fallback_cb'    => false,
                         'depth'          => 1,
                         'link_before'    => '',
@@ -76,7 +76,7 @@
                     ?>
                 </nav>
 
-                <!-- CTA Button -->
+                <!-- CTA Button (Desktop) -->
                 <div class="hidden lg:block">
                     <a href="<?php echo home_url('/reviews'); ?>" 
                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-9 px-4 py-2 bg-gradient-brand text-brand-foreground shadow-glow hover:opacity-90">
@@ -85,14 +85,36 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button aria-label="Toggle menu" class="lg:hidden rounded-md p-2 hover:bg-accent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true">
+                <button id="mobile-menu-button" aria-label="Toggle menu" class="lg:hidden rounded-md p-2 hover:bg-accent">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-5 w-5" aria-hidden="true">
                         <path d="M4 5h16"></path>
                         <path d="M4 12h16"></path>
                         <path d="M4 19h16"></path>
                     </svg>
                 </button>
+            </div>
 
+            <!-- ====================== MOBILE MENU PANEL ====================== -->
+            <div id="mobile-menu" class="hidden lg:hidden border-t border-border bg-background main-menu">
+                <div class="mx-auto max-w-7xl px-4 py-6 flex flex-col gap-1">
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'container'      => false,
+                        //'menu_class'     => 'flex flex-col gap-1 main-menu',
+                        'fallback_cb'    => false,
+                        'depth'          => 1,
+                        'items_wrap'     => '%3$s',
+                        'walker'         => new Tailwind_Menu_Walker(),
+                    ));
+                    ?>
+                    
+                    <!-- Mobile CTA Button -->
+                    <a href="<?php echo home_url('/reviews'); ?>" 
+                       class="mt-4 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-11 bg-gradient-brand text-brand-foreground shadow-glow">
+                        Explore Tools
+                    </a>
+                </div>
             </div>
         </header>
 

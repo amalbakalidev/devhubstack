@@ -14,6 +14,29 @@
     </div>
 
     <?php wp_footer(); ?>
+    <script>
+const mobileButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuIcon = document.getElementById('menu-icon');
+
+mobileButton.addEventListener('click', function() {
+    mobileMenu.classList.toggle('hidden');
+    
+    // Toggle between menu and X icon
+    if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.innerHTML = `
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        `;
+    } else {
+        menuIcon.innerHTML = `
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+        `;
+    }
+});
+</script>
 
 </body>
 </html>
