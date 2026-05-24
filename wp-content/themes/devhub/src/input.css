@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+/* Blog Content Typography */
+.blog-content {
+    @apply prose prose-lg max-w-none;
+}
+
+/* Headings */
+.blog-content h1 { @apply text-4xl sm:text-5xl font-bold tracking-tight mb-10; }
+.blog-content h2 { @apply text-3xl font-semibold mt-12 mb-6; }
+.blog-content h3 { @apply text-2xl font-semibold mt-10 mb-5; }
+.blog-content h4 { @apply text-xl font-semibold mt-8 mb-4; }
+
+/* Paragraphs */
+.blog-content p {
+    @apply text-lg leading-relaxed mb-8;
+}
+
+/* Links */
+.blog-content a {
+    @apply text-brand font-medium hover:underline;
+}
+
+/* Images */
+.blog-content img {
+    @apply rounded-2xl shadow-md my-8 w-full;
+}
+
+/* Blockquote */
+.blog-content blockquote {
+    @apply border-l-4 border-brand pl-6 italic text-xl my-10 text-foreground/90;
+}
+
+/* Lists */
+.blog-content ul, .blog-content ol {
+    @apply my-8 pl-6 text-lg;
+}
+
+.blog-content li {
+    @apply mb-3;
+}
+
+/* Figcaption */
+.blog-content figcaption {
+    @apply text-center text-sm text-muted-foreground mt-3;
+}
+
+.blog-content h1 { @apply text-4xl font-bold tracking-tight mb-10; }
+.blog-content h2 { @apply text-3xl font-semibold mt-12 mb-6; }
+.blog-content h3 { @apply text-2xl font-semibold mt-10 mb-5; }
+.blog-content p  { @apply text-lg leading-relaxed mb-8; }
+.blog-content a  { @apply text-brand hover:underline; }
+.blog-content img { @apply rounded-2xl my-8; }
+.blog-content blockquote { @apply border-l-4 border-brand pl-6 italic my-10; }
