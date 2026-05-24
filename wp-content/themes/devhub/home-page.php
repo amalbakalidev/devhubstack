@@ -102,7 +102,7 @@ get_header();
         <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
             <!-- Card 1 -->
-            <a href="<?php echo home_url('/wordpress'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/wordpress'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-5 w-5" aria-hidden="true">
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
@@ -120,7 +120,7 @@ get_header();
             </a>
 
             <!-- Card 2 -->
-            <a href="<?php echo home_url('/hosting'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/hosting'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server h-5 w-5" aria-hidden="true">
                         <rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
@@ -141,7 +141,7 @@ get_header();
             </a>
 
             <!-- Card 3 -->
-            <a href="<?php echo home_url('/ai-tools'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/ai-tools'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain h-5 w-5" aria-hidden="true">
                         <path d="M12 18V5"></path>
@@ -166,7 +166,7 @@ get_header();
             </a>
 
             <!-- Card 4 -->
-            <a href="<?php echo home_url('/dev-tools'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/dev-tools'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench h-5 w-5" aria-hidden="true">
                         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>
@@ -184,7 +184,7 @@ get_header();
             </a>
 
             <!-- Card 5 -->
-            <a href="<?php echo home_url('/reviews'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/reviews'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-5 w-5" aria-hidden="true">
                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
@@ -202,7 +202,7 @@ get_header();
             </a>
 
             <!-- Card 6 -->
-            <a href="<?php echo home_url('/comparisons'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
+            <a href="<?php echo home_url('/category/comparisons'); ?>" class="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-smooth hover:-translate-y-1 hover:border-brand/40 hover:shadow-card">
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-git-compare h-5 w-5" aria-hidden="true">
                         <circle cx="18" cy="18" r="3"></circle>
@@ -483,7 +483,7 @@ get_header();
                     4.9
                 </div>
                 <div class="sm:text-right">
-                    <a href="<?php echo home_url('/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
+                    <a href="<?php echo home_url('/category/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
                         View Deal
                     </a>
                 </div>
@@ -509,7 +509,7 @@ get_header();
                     4.7
                 </div>
                 <div class="sm:text-right">
-                    <a href="<?php echo home_url('/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
+                    <a href="<?php echo home_url('/category/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
                         View Deal
                     </a>
                 </div>
@@ -535,7 +535,7 @@ get_header();
                     4.5
                 </div>
                 <div class="sm:text-right">
-                    <a href="<?php echo home_url('/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
+                    <a href="<?php echo home_url('/category/reviews'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-8 rounded-md px-3 text-xs bg-gradient-brand text-brand-foreground hover:opacity-90">
                         View Deal
                     </a>
                 </div>
