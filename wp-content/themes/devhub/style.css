@@ -2145,3 +2145,8 @@
 .main-menu li {
   list-style-type: none;
 }
+
+.cat-icon .lucide {
+  width: 25px;
+  height: 25px;
+}

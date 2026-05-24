@@ -10,13 +10,22 @@ get_header();
     <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         
         <div class="flex items-center gap-2">
-            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
-                <!-- Newspaper SVG -->
+            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow cat-icon">
+                <!-- Dynamic Icon -->
+                <?php 
+                $category_icon = get_term_meta(get_queried_object_id(), 'category_icon', true);
+            if (!empty($category_icon)) : 
+                echo $category_icon;
+            endif; ?>
+
             </span>
             <div class="inline-flex items-center border px-2.5 py-0.5 text-xs font-semibold ... rounded-full">
                 <?php single_cat_title(); ?>
             </div>
         </div>
+
+
+        
 
        
 

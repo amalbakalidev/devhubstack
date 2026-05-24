@@ -24,7 +24,7 @@
         nav a.active,
         nav .current-menu-item a,
         nav .current_page_item a {
-            @apply text-foreground bg-accent;
+            background-color: oklch(94% .04 220);
         }
         
         /* Hover effect */

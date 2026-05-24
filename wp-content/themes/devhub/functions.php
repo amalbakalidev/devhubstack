@@ -109,3 +109,91 @@ function devhub_save_category_subtitle($term_id) {
         update_term_meta($term_id, 'category_subtitle', $subtitle);
     }
 }
+
+
+
+
+// ====================== CATEGORY ICON ======================
+// 
+
+function devhub_category_icon_field() {
+    add_action('category_add_form_fields', 'devhub_category_icon_add', 10);
+    add_action('category_edit_form_fields', 'devhub_category_icon_edit', 10, 2);
+    
+    add_action('created_category', 'devhub_save_category_icon', 10, 2);
+    add_action('edited_category', 'devhub_save_category_icon', 10, 2);
+}
+add_action('admin_init', 'devhub_category_icon_field');
+
+function devhub_category_icon_add() {
+    ?>
+    <div class="form-field">
+        <label for="category_icon">Category Icon (SVG Code)</label>
+        <textarea name="category_icon" id="category_icon" rows="4" placeholder="<svg ...></svg>"></textarea>
+        <p class="description">Paste Lucide SVG code for this category</p>
+    </div>
+    <?php
+}
+
+function devhub_category_icon_edit($term) {
+    $icon = get_term_meta($term->term_id, 'category_icon', true);
+    ?>
+    <tr class="form-field">
+        <th scope="row"><label for="category_icon">Category Icon (SVG Code)</label></th>
+        <td>
+            <textarea name="category_icon" id="category_icon" rows="4"><?php echo esc_textarea($icon); ?></textarea>
+            <p class="description">Paste Lucide SVG code here</p>
+        </td>
+    </tr>
+    <?php
+}
+
+// Save Category Icon - Allow SVG
+function devhub_save_category_icon($term_id) {
+    if (isset($_POST['category_icon'])) {
+        $icon = $_POST['category_icon'];
+        
+        // Allow SVG tags and necessary attributes
+        $allowed_tags = array(
+            'svg' => array(
+                'xmlns' => true,
+                'width' => true,
+                'height' => true,
+                'viewBox' => true,
+                'fill' => true,
+                'stroke' => true,
+                'stroke-width' => true,
+                'stroke-linecap' => true,
+                'stroke-linejoin' => true,
+                'class' => true,
+                'aria-hidden' => true,
+            ),
+            'path' => array(
+                'd' => true,
+                'fill' => true,
+            ),
+            'circle' => array(
+                'cx' => true,
+                'cy' => true,
+                'r' => true,
+            ),
+            'rect' => array(
+                'width' => true,
+                'height' => true,
+                'x' => true,
+                'y' => true,
+                'rx' => true,
+                'ry' => true,
+            ),
+            'line' => array(
+                'x1' => true,
+                'x2' => true,
+                'y1' => true,
+                'y2' => true,
+            ),
+        );
+
+        $sanitized_icon = wp_kses($icon, $allowed_tags);
+        update_term_meta($term_id, 'category_icon', $sanitized_icon);
+    }
+}
