@@ -2150,3 +2150,12 @@
   width: 25px;
   height: 25px;
 }
+.custom-logo {
+  height: 55px;
+  width: auto;
+}
+.ftr-logo {
+  width: 300px;
+  height: auto;
+  margin-left: -10px;
+}

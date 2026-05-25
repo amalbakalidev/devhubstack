@@ -16,19 +16,14 @@
                 
                 <!-- Logo & Description -->
                 <div class="lg:col-span-2">
-                    <a class="flex items-center gap-2" href="<?php echo home_url('/'); ?>">
-                        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-brand">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-xml h-4 w-4 text-brand-foreground" aria-hidden="true">
-                                <path d="m18 16 4-4-4-4"></path>
-                                <path d="m6 8-4 4 4 4"></path>
-                                <path d="m14.5 4-5 16"></path>
-                            </svg>
-                        </span>
-                        <span class="text-lg font-bold">DevHubStack</span>
-                    </a>
+                    <a class="flex items-center gap-2 ftr-logo" href="<?php echo home_url('/'); ?>">
+                        <?php $image_id = 91; echo wp_get_attachment_image( $image_id, 'full' );  ?></a>
+
+                        <span class="text-lg font-bold"><img src="<?php echo get_template_directory_uri('/wp-content/uploads/2026/05/dev-hub-footer-logo-original-white-resized.png'); ?>" alt=""></span>                    </a>
                     <p class="mt-4 max-w-xs text-sm text-muted-foreground">
                         Honest reviews, performance-focused comparisons, and the smartest tools for modern developers.
                     </p>
+                    
                     
                     <!-- Social Links -->
                     <div class="mt-6 flex gap-3" style="display: none;">
