@@ -31,7 +31,7 @@ get_header();
             </p>
 
             <div class="mt-8 flex flex-wrap gap-3">
-                <a href="<?php echo home_url('/reviews'); ?>" 
+                <a href="<?php echo home_url('/category/reviews'); ?>" 
                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 shadow hover:bg-primary/90 h-10 rounded-md px-8 bg-gradient-brand text-brand-foreground shadow-glow hover:opacity-90">
                     Explore Reviews 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-1.5 h-4 w-4" aria-hidden="true">
@@ -40,7 +40,7 @@ get_header();
                     </svg>
                 </a>
                 
-                <a href="<?php echo home_url('/comparisons'); ?>" 
+                <a href="<?php echo home_url('/category/comparisons'); ?>" 
                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-10 rounded-md px-8">
                     View Comparisons
                 </a>
@@ -106,7 +106,7 @@ get_header();
                 <div class="flex h-11 w-11 items-center justify-center rounded-lg bg-gradient-brand text-brand-foreground shadow-glow">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-5 w-5" aria-hidden="true">
                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
-                    </svg>
+                    </svg> 
                 </div>
                 <h3 class="mt-5 text-lg font-semibold" style="font-family: Inter, ui-sans-serif, system-ui, Bangla1053, sans-serif;">WordPress Optimization</h3>
                 <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Speed, caching, and Core Web Vitals tactics that actually move the needle.</p>
